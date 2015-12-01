@@ -63,7 +63,6 @@ class BaiduURLPushPlugin extends Gdn_Plugin {
         if (!$site || !$token) {
             return ;
         }
-		return;
 
         $api = sprintf('http://data.zz.baidu.com/urls?site=%s&token=%s&type=original', $site, $token);
         $ch = curl_init();
